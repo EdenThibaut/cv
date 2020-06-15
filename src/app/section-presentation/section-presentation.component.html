@@ -1,0 +1,7 @@
+<div class="contentWrapper" (mousemove)='parallax($event)' (mouseleave)='resetParallax()'>
+  <div class="titleWrapper">
+    <h2>Qui suis-je ?</h2>
+  <span #repere [@reset]=animState class="bgParallax" [style.left.px]="left" [style.bottom.px]="bottom"></span>
+  </div>
+  <p class="txtBloc">Développeur et intégrateur web depuis plus de 5 ans, je suis passionné par le domaine du web. Toujours à la recherche de la meilleure solution pour répondre aux besoins, j’aime apprendre de nouvelles technologies et langages pour compléter mes compétences. Curieux de nature, ouvert d’esprit et social, j’arrive à communiquer facilement en équipe.</p>
+</div>

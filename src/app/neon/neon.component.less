@@ -1,0 +1,27 @@
+/* The animation code */
+@keyframes lightOffOn {
+  0%   {opacity: 1;}
+  9%   {opacity: 1;}
+  10%  {opacity: 0;}
+  15%  {opacity: 1;}
+  50%  {opacity: 1;}
+  51%  {opacity: 0;}
+  56%  {opacity: 1;}
+  58%  {opacity: 1;}
+  59%  {opacity: 0;}
+  64%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+svg{
+  max-height: 450px;
+  max-width: 90vw;
+
+  #Letter_B{
+    #B_on_1, #B_on_2 {
+      animation: lightOffOn 5s linear 0s infinite normal;
+    }
+  }
+}
+
+

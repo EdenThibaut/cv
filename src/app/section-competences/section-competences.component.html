@@ -1,0 +1,15 @@
+<div class="contentWrapper" (mousemove)='parallax($event)' (mouseleave)='resetParallax()'>
+  <div class="titleWrapper">
+    <h2>Mes compétences</h2>
+  <span #repere [@reset]=animState class="bgParallax" [style.left.px]="left" [style.bottom.px]="bottom"></span>
+  </div>
+  <nz-list>
+    <div nz-row [nzGutter]="16">
+      <div nz-col [nzXl]="6" [nzLg]="6" [nzMd]="6" [nzSm]="12" [nzXs]="24" *ngFor="let image of images">
+        <nz-list-item>
+          <app-item-competence [alt]="image.alt" [src]="image.src" [delay]="image.delay"></app-item-competence>
+        </nz-list-item>
+      </div>
+    </div>
+  </nz-list>
+</div>

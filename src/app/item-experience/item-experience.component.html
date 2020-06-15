@@ -1,0 +1,8 @@
+<nz-card nzTitle={{title}} [nzExtra]="moreContent">
+  <span class="sub-title">{{subtitle}}</span>
+  <div class="contentJob" [@toggle]="toggleJob ? true : false" [innerHTML]="details">
+  </div>
+</nz-card>
+<ng-template #moreContent>
+  <i nz-icon nzType="down-circle" nzTheme="fill" [@isToggle]="toggleJob ? true : false" (click)='toggleExp($event)'></i>
+</ng-template>

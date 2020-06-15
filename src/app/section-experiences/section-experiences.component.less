@@ -1,0 +1,30 @@
+@primary-color: #f5c120;
+.contentWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vw;
+  min-width: 50vw;
+
+  .titleWrapper{
+    position: relative;
+    margin-bottom: 2em;
+
+    h2{
+      font-size: 2em;
+      margin-bottom: 0em;
+    }
+    .bgParallax{
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      background-color: @primary-color;
+      z-index: -1;
+      transition: all 0s;
+    }
+  }
+
+
+
+}

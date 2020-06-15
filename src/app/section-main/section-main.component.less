@@ -1,0 +1,24 @@
+@keyframes shake {
+  0%   {bottom: 10vh;}
+  100% {bottom: 9vh;}
+}
+
+#neonWrapper{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.2) 0%,rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#000000',GradientType=1 );
+}
+
+.downIcon{
+  position: absolute;
+  bottom: 10vh;
+  left: calc(50% - 1em);
+  animation: shake 0.5s linear 0s infinite alternate-reverse;
+}

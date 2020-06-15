@@ -1,0 +1,14 @@
+<div class="contentWrapper" (mousemove)='parallax($event)' (mouseleave)='resetParallax()'>
+  <div class="titleWrapper">
+    <h2>Mes expériences</h2>
+  <span #repere [@reset]=animState class="bgParallax" [style.left.px]="left" [style.bottom.px]="bottom"></span>
+  </div>
+  <nz-timeline>
+    <nz-timeline-item *ngFor="let item of itemsJob" [nzDot]="dotTemplate">
+      <app-item-experience [title]="item.title" [subtitle]="item.subtitle" [details]="item.details"></app-item-experience>
+    </nz-timeline-item>
+    <ng-template #dotTemplate>
+      <i nz-icon nzType="calendar" style="font-size: 2em;"></i>
+    </ng-template>
+  </nz-timeline>
+</div>
